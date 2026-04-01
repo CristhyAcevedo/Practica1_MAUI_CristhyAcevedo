@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi CRUD ITLA</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        input { padding: 8px; width: 200px; }
+        button { padding: 8px 15px; cursor: pointer; background-color: #28a745; color: white; border: none; border-radius: 4px; }
+        ul { list-style: none; padding: 0; margin-top: 20px; }
+        li { background: #eee; margin-bottom: 5px; padding: 10px; border-radius: 4px; display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Tareas - CRUD</h1>
+        <input type="text" id="tareaInput" placeholder="Nueva tarea...">
+        <button onclick="agregarTarea()">Agregar</button>
+        <ul id="listaTareas"></ul>
+    </div>
+
+    <script>
+        function agregarTarea() {
+            const input = document.getElementById('tareaInput');
+            const lista = document.getElementById('listaTareas');
+            if (input.value.trim() === "") return;
+
+            const li = document.createElement('li');
+            li.innerHTML = `${input.value} <button onclick="this.parentElement.remove()" style="background:#dc3545">X</button>`;
+            lista.appendChild(li);
+            input.value = "";
+        }
+    </script>
+</body>
+</html>

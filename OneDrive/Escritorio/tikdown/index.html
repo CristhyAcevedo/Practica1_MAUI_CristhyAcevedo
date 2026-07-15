@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9373524351651487"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-9373524351651487">
+    <title>Descargar Videos de TikTok Gratis y Rápido | TikDown</title>
+    <meta name="description"
+        content="Descarga videos de TikTok sin marca de agua online de forma gratuita. Rápido, fácil y sin instalar programas. ¡Pega tu enlace y descarga ya!">
+
+    <style>
+        :root {
+            --primary-color: #fe2c55;
+            /* El color rojo de TikTok */
+            --dark-color: #121212;
+            --light-color: #f8f8f8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-color);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        header h1 span {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .input-group {
+            display: flex;
+            margin-top: 1.5rem;
+            gap: 10px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--primary-color);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #e02447;
+        }
+
+        /* Zona de Resultados */
+        .result-box {
+            margin-top: 2rem;
+            display: none;
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #25d366;
+            /* Verde */
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: opacity 0.3s;
+        }
+
+        .download-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Sección de SEO / Texto para Google */
+        .seo-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .seo-section h2 {
+            color: var(--dark-color);
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: var(--dark-color);
+            color: #888;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tik<span>Down</span></h1>
+        <p>Descargador de Videos de TikTok sin Marca de Agua</p>
+    </header>
+
+    <div class="container">
+        <h3>Introduce el enlace del video de TikTok</h3>
+        <div class="input-group">
+            <input type="text" id="videoUrl" placeholder="https://www.tiktok.com/@usuario/video/...">
+            <button id="btnFetch" onclick="buscarVideo()">Obtener</button>
+        </div>
+
+        <div id="loading" style="display: none; margin-top: 1.5rem; color: #888;">Procesando video...</div>
+
+        <div id="resultBox" class="result-box">
+            <p><strong>¡Video encontrado!</strong> Ya puedes descargarlo sin marca de agua.</p>
+            <a href="#" id="downloadLink" class="download-btn" target="_blank" download="video.mp4">Descargar Video
+                (.MP4)</a>
+        </div>
+    </div>
+
+    <div class="seo-section">
+        <h2>¿Cómo descargar videos de TikTok gratis online?</h2>
+        <p>Nuestra herramienta te permite bajar cualquier video de TikTok directamente a tu dispositivo móvil, tablet o
+            computadora sin marcas de agua molestas. Solo debes seguir estos sencillos pasos:</p>
+        <ol>
+            <li>Entra a la aplicación de TikTok y copia el enlace del video que deseas guardar.</li>
+            <li>Pega el enlace en nuestra barra de búsqueda de arriba.</li>
+            <li>Haz clic en el botón "Obtener" y en segundos tendrás tu enlace de descarga directa.</li>
+        </ol>
+        <h2>Ventajas de usar TikDown</h2>
+        <p>No necesitas registrarte, pagar membresías o instalar extensiones pesadas en tu navegador. El proceso se hace
+            de manera externa y directa para garantizar tu privacidad y seguridad.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TikDown - Herramienta gratuita de descarga.</p>
+    </footer>
+
+    <script>
+        async function buscarVideo() {
+            const urlInput = document.getElementById("urlInput").value.trim();
+            const resultadoDiv = document.getElementById("resultado");
+
+            if (!urlInput) {
+                alert("Por favor, pega un enlace válido.");
+                return;
+            }
+
+            resultadoDiv.innerHTML = "<p>Procesando video... Por favor espera.</p>";
+
+            // Configuración con tus credenciales de RapidAPI extraídas
+            const apiKey = "ce4f3137a6msh147a7c0728f1066p18b384jsn9a92f89e1387";
+            const apiHost = "all-social-media-video-downloader3.p.rapidapi.com";
+
+            // Construimos los datos en formato x-www-form-urlencoded
+            const detallesEnvio = new URLSearchParams();
+            detallesEnvio.append("url", urlInput);
+
+            try {
+                const respuesta = await fetch(`https://${apiHost}/index.php`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                        "x-rapidapi-key": apiKey,
+                        "x-rapidapi-host": apiHost
+                    },
+                    body: detallesEnvio
+                });
+
+                const data = await respuesta.json();
+                console.log(data); // Imprime el JSON completo para auditoría en consola
+
+                if (data.success && data.links && data.links.length > 0) {
+                    // Extrae el enlace del primer nodo disponible en el arreglo
+                    const videoDirectUrl = data.links[0].link;
+                    const tituloVideo = data.title || "Video Descargado";
+
+                    resultadoDiv.innerHTML = `
+                        <div style="margin-top: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fff;">
+                            <img src="${data.thumbnail || ''}" alt="Miniatura" style="max-width: 120px; border-radius: 6px; margin-bottom: 10px;">
+                            <h3 style="margin: 5px 0; font-size: 16px;">${tituloVideo}</h3>
+                            <p style="margin: 5px 0; color: #777; font-size: 14px;">Autor: ${data.author || "Desconocido"}</p>
+                            <a href="${videoDirectUrl}" target="_blank" download class="btn-download">
+                                📥 Descargar Video
+                            </a>
+                        </div>
+                    `;
+                } else {
+                    resultadoDiv.innerHTML = "<p style='color: red;'>No se pudo obtener el enlace de descarga. Intenta con otro video.</p>";
+                }
+
+            } catch (error) {
+                console.error(error);
+                resultadoDiv.innerHTML = "<p style='color: red;'>Hubo un error al conectar con el servidor. Inténtalo de nuevo más tarde.</p>";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
